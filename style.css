@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(20, 12, 35);
+    color: yellow;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(40, 20, 55);
+    padding: 10px;
+}
+
+.topbar{
+    transition: background-color 0.3s ease-in-out;
+}
+
+.topbar:hover {
+    background-color: black;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.topbar a:hover {
+    color: yellow;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgb(40, 20, 55);
+}
+
+.intro h1 {
+    font-size: 45px;
+    color: rgb(219, 169, 219);
+}
+
+.main {
+    text-align: center;
+    padding: 25px;
+}
+
+.main h2 {
+    font-size: 30px;
+}
+
+.search {
+    width: 60%;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 100px;
+    border: 2px solid rgb(90, 60, 150);
+    background-color: rgb(35, 25, 50);
+    color: white;
+    font-size: 16px;
+}
+
+.search:focus {
+    border: 5px solid purple;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.games2 {
+    background-color: rgb(45, 30, 65);
+    border: 2px solid rgb(75, 45, 110);
+    border-radius: 15px;
+    padding: 25px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.games2 p {
+    display: incline-block;
+    background-color: rgb(100, 55, 150);
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.games2 a {
+    display: inline-block;
+    background-color: rgb(100, 55, 150);
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 100px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.games2 a:hover {
+    background-color: rgb(65, 130, 180);
+}
+
+@media (max-width: 600px) {
+    .search {
+        width: 85%;
+    }
+
+    .games2 {
+        width: 80%;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+    
+}
