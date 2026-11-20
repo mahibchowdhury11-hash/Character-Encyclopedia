@@ -189,3 +189,31 @@ h4 {
     margin: 0;
     font-weight: normal;
 }
+
+.brawl-character {
+    position: relative;
+}
+
+.brawl-character img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgb(102, 223, 54);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.brawl-character .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.brawl-character:hover .hover {
+    opacity: 1;
+}
+
+.brawl-character:hover img {
+    transform: scale(1.3);
+}
