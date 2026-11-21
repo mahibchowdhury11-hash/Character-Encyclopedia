@@ -1,37 +1,69 @@
-let search = document.getElementById("search");
+{
+    const searchInput = document.getElementById("search");
+    const games = document.querySelectorAll(".games2");
 
-let games = document.querySelectorAll(".games2");
+    if (searchInput && games.length > 0) {
+        searchInput.addEventListener("input", () => {
+            const query = searchInput.value.trim().toLowerCase();
 
-search.addEventListener("input", function() {
+            games.forEach((game) => {
+                const name = game.textContent.toLowerCase();
+                game.style.display = name.includes(query) ? "" : "none";
+            });
+        });
+    }
+}
 
-    let text = search.value.toLowerCase();
+{
+    const searchInput = document.getElementById("search");
+    const characters = document.querySelectorAll(".wb-character");
 
-    games.forEach(function(game) {
+    if (searchInput && characters.length > 0) {
+        searchInput.addEventListener("input", () => {
+            const query = searchInput.value.trim().toLowerCase();
 
-        let name = game.textContent.toLowerCase();
+            characters.forEach((character) => {
+                const text = character.textContent.toLowerCase();
+                const matches = text.includes(query);
 
-        if (name.includes(text)) {
-            game.style.display = "";
-        } 
-        else {
-            game.style.display = "none";
-        }
+                character.style.display = matches ? "" : "none";
+            });
+        });
+    }
+}
 
-    });
+{
+    const searchInput = document.getElementById("search");
+    const characters = document.querySelectorAll(".brawl-character");
 
-});
+    if (searchInput && characters.length > 0) {
+        searchInput.addEventListener("input", () => {
+            const query = searchInput.value.trim().toLowerCase();
 
-const searchInput = document.getElementById("search");
-const characters = document.querySelectorAll(".wb-character");
+            characters.forEach((character) => {
+                const text = character.textContent.toLowerCase();
+                const matches = text.includes(query);
 
-searchInput.addEventListener("input", () => {
-    const query = searchInput.value.trim().toLowerCase();
+                character.style.display = matches ? "" : "none";
+            });
+        });
+    }
+}
 
-    characters.forEach((character) => {
-        const text = character.textContent.toLowerCase();
-        const matches = text.includes(query);
+{
+    const searchInput = document.getElementById("search");
+    const characters = document.querySelectorAll(".sor-character");
 
-        character.style.display = matches ? "" : "none";
-    });
-});
+    if (searchInput && characters.length > 0) {
+        searchInput.addEventListener("input", () => {
+            const query = searchInput.value.trim().toLowerCase();
 
+            characters.forEach((character) => {
+                const text = character.textContent.toLowerCase();
+                const matches = text.includes(query);
+
+                character.style.display = matches ? "" : "none";
+            });
+        });
+    }
+}
