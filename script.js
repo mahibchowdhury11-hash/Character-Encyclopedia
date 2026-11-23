@@ -69,16 +69,34 @@
 {
     const searchInput = document.getElementById("search");
     const characters = document.querySelectorAll(".sor-character");
+    const buttons = document.querySelectorAll("button");
 
     if (searchInput && characters.length > 0) {
-        searchInput.addEventListener("input", () => {
+        let selectedAlignment = "all";
+
+        function filterSor() {
             const query = searchInput.value.trim().toLowerCase();
 
             characters.forEach((character) => {
                 const text = character.textContent.toLowerCase();
-                const matches = text.includes(query);
+                const alignment = (character.dataset.alignment || "other").toLowerCase();
 
-                character.style.display = matches ? "" : "none";
+                const matchesSearch = text.includes(query);
+                const matchesAlignment =
+                    selectedAlignment === "all" || alignment === selectedAlignment;
+
+                character.style.display = matchesSearch && matchesAlignment ? "" : "none";
+            });
+        }
+
+        searchInput.addEventListener("input", filterSor);
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                let value = button.textContent.trim().toLowerCase();
+                if (value === "others") value = "other";
+                selectedAlignment = value;
+                filterSor();
             });
         });
     }
