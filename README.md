@@ -14,4 +14,14 @@ How to use the website?
 
 Here are some images of my website.
 
+<img width="1920" height="1073" alt="image" src="https://github.com/user-attachments/assets/89a0885a-4aea-4eb7-a522-5f8e1c8990cc" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e77b37ce-8148-48c1-a240-da0a1a9034c8" />
+
+<img width="1920" height="1063" alt="image" src="https://github.com/user-attachments/assets/5965f212-63e4-4cff-a4c9-d613af94fc23" />
+
+<img width="1920" height="1074" alt="image" src="https://github.com/user-attachments/assets/0d19f697-1152-411b-afed-2278dd7b9c40" />
+
+
+
 Hope you enjoy my website!
