@@ -1,5 +1,7 @@
 My Character Encyclopedia
 
+Week 5 of terra
+
 I made a Character Encyclopedia that has the characters of three games which are Brawlhalla, Streets of Rogue, and Weapon Balls. This Character Encyclopedia features many different characters which are about 125 characters between the three games.
 
 I made this website because I wanted a way to keep track of all the many characters in the games even if there are wiki's.
